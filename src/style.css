@@ -1,0 +1,133 @@
+header {
+  border-bottom: 2px solid rgb(233, 229, 229);
+  padding: 20px;
+}
+footer {
+  padding: 7px 20px;
+  background-color: rgb(213, 230, 248);
+}
+a {
+  color: rgb(156, 213, 56);
+}
+body {
+  background-color: rgb(228, 235, 207);
+  font-family: "Bungee Spice", sans-serif;
+  font-family: "Fasthand", cursive;
+  font-family: "Orbitron", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
+  font-family: "Varela Round", sans-serif;
+  padding-top: 80px;
+}
+.app-box {
+  background-color: aliceblue;
+  width: 700px;
+
+  margin: 45px auto;
+
+  padding: 20px;
+  box-shadow: 0 30px 50px rgb(194, 196, 188);
+}
+
+search-form {
+  font-weight: bold;
+  font-size: xx-large;
+}
+.search-form-input {
+  background-color: rgba(227, 246, 216, 0.998);
+  width: 500px;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.search-form-button {
+  background-color: rgb(156, 213, 56);
+  width: 100px;
+  padding: 10px 20px;
+  border: none;
+  border-top: 1px;
+  border-radius: 6px;
+  font-weight: bolder;
+  font-size: 16px;
+  text-align: center;
+}
+.weather-data {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+main {
+  padding: 2px 0px;
+}
+.weather-city-heading {
+  margin: 0;
+  font-size: 50px;
+
+  color: rgb(80, 110, 80);
+  line-height: 48px;
+}
+.weather-city-details {
+  margin: 10px;
+  font-size: 16px;
+  color: gray;
+  line-height: 20px;
+}
+.weather-city-details strong {
+  color: rgb(118, 162, 118);
+  font-size: 20px;
+}
+
+.weather-city-temp {
+  color: rgb(118, 162, 118);
+  font-size: 105px;
+}
+.weather-temp-group {
+  display: flex;
+  margin-top: 30px;
+}
+.weather-city-degreesicon {
+  color: rgb(118, 162, 118);
+  font-size: 50px;
+  margin-top: 30px;
+}
+.weather-city-icon {
+  font-size: 78px;
+}
+.bee-image {
+  display: flex;
+  margin-left: 25%;
+  font-size: 50px;
+}
+.weather-forcast {
+  margin-top: 20px;
+  margin-left: 60px;
+  text-align: center;
+}
+
+.weather-forcast-temp {
+  margin-left: 60px;
+  font-size: 16px;
+  color: darkgray;
+}
+.weather-forcast-date {
+  font-size: 16px;
+  color: darkgray;
+}
+.forcast-temp-max {
+  margin-left: 60px;
+  font-size: 13px;
+  color: darkgray;
+}
+.forcast-temp-min {
+  margin-left: 60px;
+  font-size: 13px;
+  color: darkgray;
+}
+.weather-forecast {
+  display: flex;
+}
+
+.col2 {
+  margin: 40px;
+}

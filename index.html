@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Weather App</title>
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Fasthand&family=Orbitron:wght@400;700;800;900&family=Space+Grotesk:wght@400;500;600&family=Varela+Round&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+
+</head>
+<body>
+      <body>
+  
+    <div class="app-box" >
+    <header>
+      <form class="search-form" id="city-entered">
+        <input type="search" 
+        placeholder="Enter City Name..." 
+        required class="search-form-input" />
+        <input type="submit" 
+        value="Search" 
+        class="search-form-button" />
+      </id>
+      </form>
+    
+    </header>
+    <main>
+      <div class="weather-data">
+        <div>
+      <h1 class="weather-city-heading" id="city"></h1></id>
+      <p class="weather-city-details"><span id="time"></span>,<span id="weatherdescription"></span> 
+   
+</Br>
+Humidity: <strong><span id="humidity"></span></strong>
+</Br>
+Wind:<strong> <span id="wind"></span></strong>
+      </p>
+      </div>
+      <div class=" weather-temp-group">
+      <div class=" weather-city-icon"><span id="icon"></span>
+       </div>
+      <div class=" weather-city-temp" id="temperature">
+21
+      </div>
+      <div class=" weather-city-degreesicon">
+°C
+      </div>
+</div>
+    </div> 
+      <div class="weather-forecast" id="forecastjs"></div> 
+
+      <br></br>
+    </main>
+    <footer>
+      Build by
+      <a href="https://github.com/VanessaJade-git"> Vanessa Fettuccia </a>and is
+      opened-source on <a href="https://github.com/"> GitHub </a> website hosted
+      on
+      <a href="https://www.netlify.com/"> Netlify </a>
+      
+    </footer>
+    </div>
+  </body>
+  <script src="src/index.js"></script>
+
+</body>
+</html>
