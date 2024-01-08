@@ -12,7 +12,7 @@ searchFormElement.addEventListener("submit", handlesearch);
 function searchCity(city) {
   let api = "67c51o1bccat73f84f450a30f6ffcb49";
   let apiKey = `https://api.shecodes.io/weather/v1/current?query=${city}&key=67c51o1bccat73f84f450a30f6ffcb49&units=metric`;
-
+  console.log(apiKey);
   axios.get(apiKey).then(displayTemperature);
 }
 
@@ -39,8 +39,8 @@ function displayTemperature(response) {
 
   console.log(response.data.condition.description);
   console.log(response.data);
-  console.log(response.data.Temperature.humidity);
-  getforecast(response.data.City);
+  console.log(response.data.temperature.humidity);
+  getforecast(response.data.city);
 }
 
 function formdate(date) {
@@ -65,12 +65,10 @@ function formdate(date) {
 
 searchCity("Paris");
 
-displayForecast("paris");
-
 function getforecast(city) {
   let apikeyf = "67c51o1bccat73f84f450a30f6ffcb49";
   let apiurlf = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=67c51o1bccat73f84f450a30f6ffcb49`;
-  console.log(apiurlf);
+
   axios(apiurlf).then(displayForecast);
 }
 
@@ -79,17 +77,24 @@ function displayForecast(response) {
   let forecastElement = document.querySelector("#forecastjs");
   let days = ["Tues", "Wed", "Thurs", "Fri", "Sat", "Sun"];
   let forecastHtml = "";
-  days.forEach(function (day) {
+  response.data.daily.slice(0, 5).forEach(function (day) {
     forecastHtml =
       forecastHtml +
       `<div class="col2">
-      <div class="weather-forecast-date">${day}</div>
-      <div class="forecast-icon">🌞</div>
-      <div class="weather-forecast-temp">28</div>
-      <span class="forecast-temp-max">3</span>
-      <span class="forecast-temp-min">12</span>
+      <div class="weather-forecast-date">${
+        formdate(new Date(day.time * 1000)).split(" ")[0]
+      }</div>
+       <div class="forecast-icon" id="forecasticonid">
+          <img src="${day.condition.icon_url}" class="weather-city-icon" />
+        </div>
+      <div class="weather-forecast-temp"></div>
+      <span class="forecast-temp-max">${day.temperature.maximum}</span>
+      <span class="forecast-temp-min">${day.temperature.minimum}</span>
     </div>`;
   });
 
   forecastElement.innerHTML = forecastHtml;
 }
+console.log(
+  "https://api.shecodes.io/weather/v1/forecast?query=perth&key=67c51o1bccat73f84f450a30f6ffcb49"
+);
