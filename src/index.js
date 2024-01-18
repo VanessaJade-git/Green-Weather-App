@@ -87,10 +87,15 @@ function displayForecast(response) {
        <div class="forecast-icon" id="forecasticonid">
           <img src="${day.condition.icon_url}" class="weather-city-icon" />
         </div>
-      <div class="weather-forecast-temp"></div>
-      <span class="forecast-temp-max">${day.temperature.maximum}</span>
-      <span class="forecast-temp-min">${day.temperature.minimum}</span>
-    </div>`;
+      
+      <div class="weather-forecast-temp">
+          <span class="forecast-temp-max"> ${day.temperature.maximum}°  </span>
+          
+          <span class="forecast-temp-min">  ${day.temperature.minimum}°</span>
+        </div>
+      </div>
+    
+    `;
   });
 
   forecastElement.innerHTML = forecastHtml;

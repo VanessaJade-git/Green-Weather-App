@@ -5,6 +5,7 @@ header {
 footer {
   padding: 7px 20px;
   background-color: rgb(213, 230, 248);
+  text-align: center;
 }
 a {
   color: rgb(156, 213, 56);
@@ -20,11 +21,11 @@ body {
 }
 .app-box {
   background-color: aliceblue;
-  width: 700px;
+  width: 800px;
 
-  margin: 45px auto;
+  margin: 60px auto;
 
-  padding: 20px;
+  padding: 40px;
   box-shadow: 0 30px 50px rgb(194, 196, 188);
 }
 
@@ -34,17 +35,18 @@ search-form {
 }
 .search-form-input {
   background-color: rgba(227, 246, 216, 0.998);
-  width: 500px;
-  padding: 10px;
+  width: 600px;
+  padding: 20px;
   border: none;
   border-radius: 6px;
+  padding-left: 20px;
   font-size: 16px;
 }
 
 .search-form-button {
   background-color: rgb(156, 213, 56);
-  width: 100px;
-  padding: 10px 20px;
+  width: 130px;
+  padding: 20px 20px;
   border: none;
   border-top: 1px;
   border-radius: 6px;
@@ -56,43 +58,45 @@ search-form {
   display: flex;
   justify-content: space-evenly;
   margin-top: 30px;
+  margin-left: 10px;
 }
 main {
-  padding: 2px 0px;
+  padding: 0px 0px;
 }
 .weather-city-heading {
-  margin: 0;
-  font-size: 50px;
+  font-size: 60px;
 
-  color: rgb(80, 110, 80);
+  color: rgb(118, 162, 118);
   line-height: 48px;
 }
 .weather-city-details {
   margin: 10px;
   font-size: 16px;
   color: gray;
-  line-height: 20px;
+  line-height: 30px;
 }
 .weather-city-details strong {
-  color: rgb(118, 162, 118);
+  color: RGB(204, 132, 132);
   font-size: 20px;
 }
 
 .weather-city-temp {
   color: rgb(118, 162, 118);
   font-size: 105px;
+  margin-left: 20px;
 }
 .weather-temp-group {
   display: flex;
   margin-top: 30px;
 }
-.weather-city-degreesicon {
+.weather-city-degresicon {
   color: rgb(118, 162, 118);
   font-size: 50px;
-  margin-top: 30px;
 }
-.weather-city-icon {
-  font-size: 78px;
+
+#icon img {
+  height: 150px;
+  width: 150px;
 }
 .bee-image {
   display: flex;
@@ -125,13 +129,42 @@ main {
   color: darkgray;
 }
 .weather-forecast {
-  display: flex;
+  display: inline-flex;
 }
 
 .col2 {
-  margin: 40px;
+  margin-left: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+.weather-forecast-date {
+  text-align: center;
 }
 .weather-city-icon {
   width: 50px;
   height: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 25px;
+}
+
+.weather-forecast-temp {
+  text-align: right;
+  display: flex;
+  color: RGB(204, 132, 132);
+}
+.forecast-temp-max {
+  text-align: right;
+  display: flex;
+  font-weight: bold;
+  color: RGB(204, 132, 132);
+  margin-right: 15px;
+}
+.forecast-temp-min {
+  text-align: right;
+  display: flex;
+  color: RGB(204, 132, 132);
 }
